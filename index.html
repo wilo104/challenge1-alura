@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callenge - Desafio 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/0631585555.js" crossorigin="anonymous"></script>>
+</head>
+<body>
+    <main>
+        <section>
+          <img class="logo" src="img/Logo.png" alt="Logo Alura" />
+          <textarea
+            id="texto1"
+            class="ingresar"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aqui"
+            autofocus
+          ></textarea>
+  
+          <p class="aviso">
+            <i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas
+            y sin acentos
+          </p>
+          <button class="btn-encriptar" onclick="encriptarPalabra()">Encriptar</button>
+          <button class="btn-desencriptar" onclick=" desencriptarPalabra()">
+            Desencriptar
+          </button>
+  
+          <div class="rectangulo">
+            <div id="div-oculto" class="div-oculto">
+              <textarea id="texto2" class="texto-encriptado"></textarea>
+              <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+  
+            <div id="muneco-div" class="muneco">
+              <img src="img/Muñeco.png" alt="Muñeco" />
+              <p class="texto1">Ningun mensaje fue encontrado</p>
+              <p class="texto2">
+                Ingresa el texto que desees encriptar o desencriptar
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+  
+  
+      <footer>
+        <p class="copyright">&copy Wilder López Alarcón - 2024</p>
+      </footer>
+      <script src="javascript/main.js"></script>
+
+</body>
+</html>

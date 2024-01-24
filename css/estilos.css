@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ body {
+    position: relative;
+    background: #f3f5fc;
+  }
+  
+  .logo {
+    position: absolute;
+    width: 90px;
+    height: 36px;
+    left: 40px;
+    top: 40px;
+  }
+  
+  .ingresar {
+    position: absolute;
+    left: 200px;
+    top: 145px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    background: #f3f5fc;
+    color: #0a3871;
+    border: none;
+    resize: none;
+    outline: none;
+  }
+  
+  .ingresar::placeholder {
+    color: #0a3871;
+  }
+  
+  .aviso {
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 200px;
+    top: 727px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #495057;
+    opacity: 0.8;
+  }
+  
+  .btn-encriptar {
+    position: absolute;
+    left: 200px;
+    top: 755px;
+    padding: 17px;
+    width: 236px;
+    background: #0a3871;
+    border-radius: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-encriptar:hover {
+    background: #02316b;
+  }
+  
+  .btn-encriptar:active {
+    background: #06264d;
+  }
+  
+  .btn-desencriptar {
+    position: absolute;
+    left: 460px;
+    top: 755px;
+    padding: 16px;
+    width: 236px;
+    background: #d8dfe8;
+    border-radius: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #0a3871;
+    cursor: pointer;
+    border: 1px solid #0a3871;
+  }
+  
+  .btn-desencriptar:hover {
+    background: #b9bcc1;
+  }
+  .btn-desencriptar:active {
+    background: #a4a8ad;
+  }
+  
+  .rectangulo {
+    position: absolute;
+    width: 300px;
+    height: 800px;
+    left: 940px;
+    top: 40px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+  
+  .muneco {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    width: 236px;
+    height: 359px;
+    left: 32px;
+    top: 200px;
+  }
+  
+  .texto1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+  }
+  
+  .texto2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+  }
+  
+  .div-oculto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 236px;
+    height: 651px;
+    left: 32px;
+    top: 32px;
+    display: none;
+  }
+  
+  .texto-encriptado {
+    position: absolute;
+    width: 233px;
+    height: 647px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    background: #ffffff;
+    color: #0a3871;
+    border: none;
+    resize: none;
+    outline: none;
+  }
+  
+  .btn-copiar {
+    position: absolute;
+    top: 683px;
+    padding: 16px;
+    width: 236px;
+    background: #ffffff;
+    border-radius: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #0a3871;
+    cursor: pointer;
+    border: 1px solid #0a3871;
+  }
+  
+  .btn-copiar:hover {
+    background: #f1efef;
+  }
+  
+  .btn-copiar:active {
+    background: #b4b2b2;
+  }
+  
+  footer {
+    position: absolute;
+    text-align: center;
+    background-color: #343a40;
+    padding: 40px;
+    width: 1183px;
+    top: 870px;
+  }
+  
+  .copyright {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 20px;
+  }
+
